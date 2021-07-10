@@ -19,7 +19,7 @@ exports.updateContact = (req, res, next) => {
 
       if (isValid) {
         var sqlUp = `UPDATE contact SET name = '${name}', phone = '${phone}', address = '${address}', email = '${email}' WHERE id = ${id} ;`;
-        con(sql, (err, result) => {
+        con(sqlUp, (err, result) => {
           if (err !== '') {
             res.status(404).json(err.code);
           }

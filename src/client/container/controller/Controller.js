@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Route, NavLink, withRouter } from "react-router-dom";
 import { connect } from "react-redux";
+import Toast from '../components/Toast'
 import Contact from "../dashboard/Contact/Contact";
 
 export class Controller extends Component {
@@ -43,6 +44,11 @@ export class Controller extends Component {
           backgroundSize: '100%'
         }} >
           <PrivateRoute />
+          <div id='ToastSection'>
+            <div id='errorToast' className="toast" role="alert" aria-live="assertive" aria-atomic="true" autohide='true' data-animation='true' data-delay='10000' style={{ position: 'fixed', bottom: '2px', right: '3px' }}>
+              <Toast id='errT' />
+            </div>
+          </div>
         </div>
       </div>
     );
