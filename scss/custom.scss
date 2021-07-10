@@ -1,0 +1,47 @@
+﻿.main-logo {
+    background-image: url('/logo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 200px;
+    height: 24px;
+    span {
+        display:block;
+        margin-left: 70px;
+        font-size: 1rem;
+        margin-top: -7px;
+    }
+}
+
+#sidebarToggle {
+    margin-left: 80px;
+}
+
+.nav-link, button#sidebarToggle {
+    svg {
+        position: relative;
+        top: -2px;
+    }
+}
+
+a.nav-link i.fas + span {
+    margin-left: 4px;
+}
+
+.actions-column .btn {
+    cursor: pointer;
+}
+
+.card-header .btn-primary {
+    float: right;
+}
+
+table.dataTable tbody th, table.dataTable tbody td {
+    padding-top:0 !important;
+    padding-bottom: 0 !important;
+}
+
+.toast-body{
+    width: '250px';
+}
+
+
